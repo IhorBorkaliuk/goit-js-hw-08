@@ -1,7 +1,5 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-import '../css/common.css'
-import '../css/01-gallery.css'
 
 
 import { galleryItems } from './gallery-items';
@@ -34,5 +32,6 @@ galleryRef.append(...gallery)
 
 let imgLab = new SimpleLightbox('.gallery a', {
     captionDelay: '150',
+    captionsData: 'alt',
     animationSpeed: '150'
 });
